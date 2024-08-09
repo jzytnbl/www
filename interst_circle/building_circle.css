@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading Styles */
+.heading {
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Build Circle Button Styles */
+.build-circle {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+.build-circle button {
+    width: 120px;
+    height: 50px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.build-circle button:hover {
+    background-color: #0056b3;
+}
+
+.build-circle a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+}
+
+/* Data Table Styles */
+.data-table {
+    width: 80%;
+    margin: 80px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.data-table th, .data-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+    background-color: #f8f8f8;
+    font-size: 24px;
+    color: #333;
+}
+
+.data-table td a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.data-table td a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styles */
+#createInterestForm {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 40px auto;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    height: 40px;
+    border-radius: 5px;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    padding: 0 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}

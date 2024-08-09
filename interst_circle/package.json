@@ -1,0 +1,41 @@
+{
+  "name": "www",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "interst-circle": "./index.js"
+},
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "jest": "^27.0.0",
+    "webpack": "^5.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "pkg": {
+    "assets": [
+      "build_interest-circle.html",
+      "building_circle.css",
+      "circle_page.php",
+      "create-circle.php",
+      "fetch_circles.php",
+      "iconfont.css",
+      "index.html",
+      "launch.json",
+      "login.php",
+      "phpinfo.php",
+      "post.css",
+      "post_to_circle.php",
+      "register.php",
+      "style.css",
+      "submit_comment.php",
+      "兴趣圈.html",
+      "phpMyAdmin4.8.5/**/*"
+    ]
+  }
+}

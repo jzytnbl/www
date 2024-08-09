@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>兴趣圈</title>
+    <link rel="stylesheet" href="./building_circle.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('fetch_circles.php')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        console.error('Error:', data.error);
+                    } else {
+                        const table = document.createElement('table');
+                        table.className = 'data-table';
+                        const headerRow = table.insertRow();
+                        const headerCell = headerRow.insertCell();
+                        headerCell.className = 'hC';
+                        headerCell.textContent = '加入兴趣圈吧';
+                        data.data.forEach(circlename => {
+                            const row = table.insertRow();
+                            const cell = row.insertCell();
+                            const link = document.createElement('a');
+                            link.href = `./circle_page.php?circlename=${encodeURIComponent(circlename)}`;;
+                            link.textContent = circlename;
+                            cell.appendChild(link);
+                        });
+                        document.body.appendChild(table);
+                    }
+                })
+                .catch(error => {
+                    console.error('Fetch Error:', error);
+                    alert('加载数据失败，请检查网络连接或服务器响应。');
+                });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="heading">发现圈子</div>
+    <div class="build-circle">
+        <button><a href="./build_interest-circle.html">创建</a></button>
+    </div>
+</body>
+
+</html>

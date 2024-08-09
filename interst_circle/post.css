@@ -1,0 +1,110 @@
+.panel {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.ctrl-wrap {
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jsb {
+    justify-content: space-between;
+}
+
+.aic {
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.file {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+.hover-primary:hover {
+    color: #0056b3;
+}
+
+.transition {
+    transition: all 0.3s ease;
+}
+
+.dark-9 {
+    color: #666;
+}
+
+.fz-sm {
+    font-size: 14px;
+}
+
+.fz-x-lg {
+    font-size: 24px;
+}
+
+.brs-4 {
+    border-radius: 4px;
+}
+
+.px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.px-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.py-15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.mt-7 {
+    margin-top: 7px;
+}
